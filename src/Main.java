@@ -31,6 +31,10 @@ public class Main {
         for (int i=0;i< partidos.size();i++)
         {
             System.out.println((i+1)+"° partido\n"+ partidos.get(i).toString()+"\n----Resultado----\n"+partidos.get(i).getTeam1().getNombre()+": ");
+            if(i== partidos.size()-1)
+            {
+                System.out.println("ULTIMO PARTIDO\n");
+            }
             int score1=scan.nextInt();
             scan.nextLine();
             System.out.println(partidos.get(i).getTeam2().getNombre());
